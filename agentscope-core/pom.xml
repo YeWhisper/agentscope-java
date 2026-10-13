@@ -50,12 +50,14 @@
 
     <dependencies>
         <!-- Reactor Core for Flux/Mono -->
+        <!--  用于Flux/Mono -->
         <dependency>
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-core</artifactId>
         </dependency>
 
         <!-- Jackson for JSON serialization/deserialization -->
+        <!-- jackson 用于JSON序列化/反序列化 -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -67,12 +69,14 @@
         </dependency>
 
         <!-- Victools JSON Schema Generator for structured output -->
+        <!-- Victools JSON Schema 生成器用于结构化输出 -->
         <dependency>
             <groupId>com.github.victools</groupId>
             <artifactId>jsonschema-generator</artifactId>
         </dependency>
 
         <!-- Victools JSON Schema Module for Jackson annotations support -->
+        <!-- 用于支持 jackson 注解的Victools JSON模式模块 -->
         <dependency>
             <groupId>com.github.victools</groupId>
             <artifactId>jsonschema-module-jackson</artifactId>
@@ -120,6 +124,9 @@
         <!-- Tree-sitter Java bindings + Bash grammar for the Bash tool's AST-based safety
              analysis. The base 'tree-sitter' artifact is declared explicitly so its classes are
              available at compile time; tree-sitter-bash brings it in only at runtime by default. -->
+        <!-- Tree-sitter的Java绑定版本，以及用于该工具基于抽象语法树的安全分析的Bash语法解析模块。
+            基础版本的‘tree-sitter’组件会被明确声明，这样其相关类就能在编译时被使用；
+            而tree-sitter-bash默认则只在运行时才引入这一组件。 -->
         <dependency>
             <groupId>io.github.bonede</groupId>
             <artifactId>tree-sitter</artifactId>
@@ -158,6 +165,7 @@
         </dependency>
 
         <!-- Commons Compress for secure tar archive extraction in sandbox snapshots -->
+        <!-- 用于在沙箱快照中安全解压tar归档的Commons压缩工具 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-compress</artifactId>
@@ -165,6 +173,7 @@
         </dependency>
 
         <!-- SQLite for best-effort local workspace index -->
+        <!-- 用于尽力提升本地工作区索引性能的SQLite -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
@@ -186,7 +195,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Optional sandbox stores (io.agentscope.harness.agent.sandbox.impl.*) -->
+        <!-- 可选的沙箱存储（io.agentscope.harness.agent.sandbox.impl.*） -->
         <dependency>
             <groupId>io.fabric8</groupId>
             <artifactId>kubernetes-client</artifactId>
